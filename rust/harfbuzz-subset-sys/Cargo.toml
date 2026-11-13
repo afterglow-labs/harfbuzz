@@ -1,0 +1,13 @@
+[package]
+name = "harfbuzz-subset-sys"
+description = "The HarfBuzz subsetter, built from this repository's src/: raw declarations and safe wrappers for the calls a font subsetter makes. Native only."
+version = "0.1.0+harfbuzz-15.0.0"
+edition = "2024"
+# The Rust code is MIT; the HarfBuzz source it compiles (../../src) is HarfBuzz's "Old MIT" licence (../../COPYING).
+license = "MIT AND MIT-Modern-Variant"
+repository = "https://github.com/storytold/harfbuzz"
+publish = false
+links = "harfbuzz-subset"
+
+[build-dependencies]
+cc = "1"
