@@ -1,11 +1,7 @@
 name: crossbuild-mingw
 
 on:
-  push:
-    branches: [ main ]
-    tags: ["*.*.*"]
-  pull_request:
-    branches: [ main ]
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
